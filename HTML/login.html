@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SoundCheck | Login</title>
+
+    <!-- Conexão com o CSS externo -->
+    <link rel="stylesheet" href="../CSS/loginstyle.css">
+</head>
+
+<body>
+
+    <div id="container">
+
+        <!-- Área de apresentação -->
+        <div id="apresentacao">
+
+            <div id="logo">
+                <h1>Sound<span>Check</span></h1>
+            </div>
+
+            <div id="texto-apresentacao">
+                <h2>Seu áudio merece uma análise.</h2>
+
+                <p>
+                    Analise suas gravações, identifique possíveis
+                    problemas técnicos e entenda melhor a qualidade
+                    do seu áudio.
+                </p>
+            </div>
+
+            <!-- Imagem sugerida: home studio com microfone,
+                 mesa de áudio e computador -->
+            <div id="imagem">
+                <img src="../IMAGENS/Home studio 2.jfif" 
+                     alt="Estúdio caseiro de gravação musical">
+            </div>
+
+        </div>
+
+        <!-- Área de login -->
+        <div id="login">
+
+            <div id="formulario">
+
+                <h2>Bem-vindo!</h2>
+
+                <p>Entre na sua conta para continuar.</p>
+
+                <form action="telainicial.html" method="get">
+
+                    <label for="email">E-mail</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Digite seu e-mail"
+                        required
+                    >
+
+                    <label for="senha">Senha</label>
+
+                    <input
+                        type="password"
+                        id="senha"
+                        name="senha"
+                        placeholder="Digite sua senha"
+                        required
+                    >
+
+                    <div id="opcoes">
+                        <label>
+                            <input type="checkbox" name="lembrar">
+                            Lembrar de mim
+                        </label>
+
+                        <a href="senha.html">Esqueceu a senha?</a>
+                    </div>
+
+                    <button type="submit" >Entrar</button>
+
+                </form>
+
+                <div id="cadastro">
+                    <p>
+                        Ainda não possui uma conta?
+                        <a href="cadastro.html">Cadastre-se</a>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 SoundCheck. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

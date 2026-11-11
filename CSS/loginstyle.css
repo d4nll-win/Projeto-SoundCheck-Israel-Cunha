@@ -1,0 +1,212 @@
+
+/* Configurações gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #10131c;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estrutura principal */
+
+#container {
+    display: flex;
+    min-height: 90vh;
+}
+
+/* Área de apresentação */
+
+#apresentacao {
+    width: 55%;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #171d2b;
+}
+
+#logo h1 {
+    font-size: 30px;
+}
+
+#logo span {
+    color: #36a9ff;
+}
+
+#texto-apresentacao {
+    max-width: 480px;
+}
+
+#texto-apresentacao h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+#texto-apresentacao p {
+    color: #b7c0d0;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* Imagem */
+
+#imagem {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+#imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Área de login */
+
+#login {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+}
+
+#formulario {
+    width: 100%;
+    max-width: 380px;
+}
+
+#formulario h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#formulario > p {
+    color: #aab3c2;
+    margin-bottom: 30px;
+}
+
+/* Campos do formulário */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 9px;
+    font-size: 14px;
+}
+
+form input[type="email"],
+form input[type="password"] {
+    padding: 14px;
+    margin-bottom: 22px;
+    border: 1px solid #343c4e;
+    border-radius: 7px;
+    background-color: #1b2231;
+    color: white;
+    outline: none;
+}
+
+form input:focus {
+    border-color: #36a9ff;
+}
+
+/* Opções do formulário */
+
+#opcoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 12px;
+}
+
+#opcoes label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+}
+
+a {
+    color: #36a9ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Botão */
+
+button {
+    padding: 14px;
+    border: none;
+    border-radius: 7px;
+    background-color: #1689e8;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0873c9;
+}
+
+/* Cadastro */
+
+#cadastro {
+    text-align: center;
+    margin-top: 25px;
+    color: #aab3c2;
+    font-size: 14px;
+}
+
+/* Rodapé */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #7f899b;
+    font-size: 12px;
+    background-color: #10131c;
+}
+
+/* Responsividade */
+
+@media (max-width: 800px) {
+
+    #container {
+        flex-direction: column;
+    }
+
+    #apresentacao,
+    #login {
+        width: 100%;
+    }
+
+    #apresentacao {
+        gap: 35px;
+        padding: 30px;
+    }
+
+    #texto-apresentacao h2 {
+        font-size: 30px;
+    }
+
+    #login {
+        padding: 45px 25px;
+    }
+}

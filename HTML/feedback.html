@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundCheck | Avaliações</title>
+
+    <link rel="stylesheet" href="../CSS/feedback.css">
+</head>
+
+<body class="pagina-feedback">
+
+    <header id="topo-feedback">
+
+        <div id="logo-feedback">
+            <h1>SoundCheck</h1>
+        </div>
+
+        <div class="menu-feedback">
+            <a href="telainicial.html">Início</a>
+            <a href="analise.html">Analisar áudio</a>
+            <a href="feedback.html">Avaliações</a>
+            <a href="login.html">Sair</a>
+        </div>
+
+    </header>
+
+    <main id="conteudo-feedback">
+
+        <section id="introducao-feedback">
+
+            <h2>Avaliações e Opiniões</h2>
+
+            <p>
+                Sua opinião é importante para nós!
+                Compartilhe sua experiência com o SoundCheck
+                e ajude a melhorar nossa plataforma.
+            </p>
+
+        </section>
+
+        <section id="formulario-feedback">
+
+            <h2>Deixe sua avaliação</h2>
+
+            <form action="agradecimento.html" method="get">
+
+                <div class="campo-feedback">
+                    <label for="nome">Nome:</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome"
+                        required
+                    >
+                </div>
+
+                <div class="campo-feedback">
+                    <label for="nota">Como você avalia o SoundCheck?</label>
+
+                    <select id="nota" name="nota" required>
+                        <option value="">Selecione uma nota</option>
+                        <option value="5">5 - Excelente</option>
+                        <option value="4">4 - Muito bom</option>
+                        <option value="3">3 - Bom</option>
+                        <option value="2">2 - Regular</option>
+                        <option value="1">1 - Ruim</option>
+                    </select>
+                </div>
+
+                <div class="campo-feedback">
+                    <label for="comentario">Sua opinião:</label>
+
+                    <textarea
+                        id="comentario"
+                        name="comentario"
+                        rows="5"
+                        placeholder="Conte como foi sua experiência com a plataforma..."
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="campo-feedback">
+                    <label for="sugestao">Sugestões de melhoria (opcional):</label>
+
+                    <textarea
+                        id="sugestao"
+                        name="sugestao"
+                        rows="4"
+                        placeholder="O que podemos melhorar?"
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="botao-feedback">
+                    Enviar avaliação
+                </button>
+
+            </form>
+
+        </section>
+
+        <section id="opiniao-usuarios">
+
+            <h2>O que os usuários dizem</h2>
+
+            <div class="lista-opinioes">
+
+                <article class="card-opiniao">
+                    <h3>Usuário exemplo</h3>
+                    <p class="nota-opiniao">Nota: 5/5</p>
+                    <p>
+                        A plataforma apresenta informações técnicas
+                        de maneira simples e fácil de entender.
+                    </p>
+                </article>
+
+                <article class="card-opiniao">
+                    <h3>Usuário exemplo</h3>
+                    <p class="nota-opiniao">Nota: 4/5</p>
+                    <p>
+                        Gostei da proposta do sistema. Seria interessante
+                        adicionar mais recursos de análise.
+                    </p>
+                </article>
+
+                <article class="card-opiniao">
+                    <h3>Usuário exemplo</h3>
+                    <p class="nota-opiniao">Nota: 5/5</p>
+                    <p>
+                        Uma ferramenta interessante para quem está
+                        começando a gravar em casa.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 SoundCheck. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundCheck | Resultados</title>
+
+    <link rel="stylesheet" href="../CSS/resultados.css">
+</head>
+
+<body class="pagina-resultados">
+
+    <header id="topo-resultados">
+
+        <div id="logo-resultados">
+            <h1>SoundCheck</h1>
+        </div>
+
+        <div class="menu-resultados">
+            <a href="telainicial.html">Início</a>
+            <a href="analise.html">Analisar áudio</a>
+            <a href="feedback.html">Avaliações</a>
+            <a href="login.html">Sair</a>
+        </div>
+
+    </header>
+
+    <main id="conteudo-resultados">
+
+        <section id="titulo-resultados">
+
+            <h2>Resultado da análise</h2>
+
+            <p>
+                Confira as informações técnicas encontradas
+                na análise da sua gravação.
+            </p>
+
+        </section>
+
+        <section id="arquivo-analisado">
+
+            <div class="informacao-arquivo">
+                <h3>Arquivo analisado</h3>
+                <p>Minha gravacao.wav</p>
+            </div>
+
+            <div class="status-arquivo">
+                <span>Análise concluída</span>
+            </div>
+
+        </section>
+
+        <section id="indicadores-resultados">
+
+            <h3>Indicadores técnicos</h3>
+
+            <div class="cards-resultados">
+
+                <div class="card-resultado">
+                    <h4>Duração</h4>
+                    <p class="valor-resultado">03:45</p>
+                    <span>Tempo total do áudio</span>
+                </div>
+
+                <div class="card-resultado">
+                    <h4>Pico de áudio</h4>
+                    <p class="valor-resultado">-1.5 dBFS</p>
+                    <span>Nível máximo de amplitude</span>
+                </div>
+
+                <div class="card-resultado">
+                    <h4>Nível RMS</h4>
+                    <p class="valor-resultado">-18 dBFS</p>
+                    <span>Nível médio de energia</span>
+                </div>
+
+                <div class="card-resultado">
+                    <h4>Frequência</h4>
+                    <p class="valor-resultado">44.1 kHz</p>
+                    <span>Frequência de amostragem</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="detalhes-audio">
+
+            <h3>Detalhes do arquivo</h3>
+
+            <div class="lista-detalhes">
+
+                <div class="item-detalhe">
+                    <span>Formato</span>
+                    <strong>WAV</strong>
+                </div>
+
+                <div class="item-detalhe">
+                    <span>Canais</span>
+                    <strong>Estéreo (2 canais)</strong>
+                </div>
+
+                <div class="item-detalhe">
+                    <span>Frequência de amostragem</span>
+                    <strong>44.100 Hz</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="conclusao-analise">
+
+            <h3>Observações da análise</h3>
+
+            <p>
+                Os indicadores apresentados ajudam a compreender
+                algumas características técnicas da gravação.
+                O pico de áudio está próximo do limite digital,
+                então vale conferir se existem trechos com clipping.
+            </p>
+
+            <p>
+                Lembre-se: esses indicadores não substituem
+                a avaliação auditiva da gravação.
+            </p>
+
+        </section>
+
+        <section id="acoes-resultados">
+
+            <a href="analise.html" class="botao-secundario">
+                Analisar outro áudio
+            </a>
+
+            <a href="telainicial.html" class="botao-principal-resultados">
+                Voltar ao início
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 SoundCheck. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

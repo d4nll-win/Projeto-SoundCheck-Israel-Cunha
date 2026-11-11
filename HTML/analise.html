@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundCheck | Análise de Áudio</title>
+
+    <link rel="stylesheet" href="../CSS/analise.css">
+</head>
+
+<body class="pagina-analise">
+
+    <header id="topo-analise">
+
+        <div id="logo-analise">
+            <h1>SoundCheck</h1>
+        </div>
+
+        <div class="menu-analise">
+            <a href="home.html">Início</a>
+            <a href="analise.html">Analisar áudio</a>
+            <a href="feedback.html">Avaliações</a>
+            <a href="login.html">Sair</a>
+        </div>
+
+    </header>
+
+    <main id="conteudo-analise">
+
+        <section id="introducao-analise">
+
+            <div class="texto-analise">
+                <h2>Análise de áudio</h2>
+
+                <p>
+                    Envie sua gravação para que o SoundCheck
+                    possa analisar algumas características técnicas
+                    do arquivo e ajudar você a identificar possíveis
+                    problemas na sua gravação.
+                </p>
+            </div>
+
+            <!-- Imagem sugerida: estúdio caseiro de gravação -->
+            <div class="imagem-analise">
+                <img src="../IMAGENS/Estúdio SoundCheck em Luzes Neon.png"
+                    alt="Estúdio caseiro de gravação">
+            </div>
+
+        </section>
+
+        <section id="area-upload">
+
+            <h2>Envie sua gravação</h2>
+
+            <p>
+                Selecione um arquivo de áudio armazenado no seu computador.
+            </p>
+
+            <form action="resultados.html" method="get" enctype="multipart/form-data">
+
+                <div class="caixa-upload">
+
+                    <label for="arquivo-audio">
+                        Selecione seu arquivo de áudio
+                    </label>
+
+                    <input
+                        type="file"
+                        id="arquivo-audio"
+                        name="arquivo-audio"
+                        accept=".wav,.mp3,.flac,.ogg"
+                        required
+                    >
+
+                    <p>Formatos aceitos: WAV, MP3, FLAC e OGG.</p>
+
+                </div>
+
+                <button type="submit" class="botao-analisar">
+                    Iniciar análise
+                </button>
+
+            </form>
+
+        </section>
+
+        <section id="informacoes-analise">
+
+            <h2>O que será analisado?</h2>
+
+            <div class="cards-analise">
+
+                <div class="card-analise">
+                    <h3>Duração</h3>
+                    <p>Tempo total da gravação.</p>
+                </div>
+
+                <div class="card-analise">
+                    <h3>Pico de áudio</h3>
+                    <p>Identificação dos níveis máximos de amplitude.</p>
+                </div>
+
+                <div class="card-analise">
+                    <h3>Nível RMS</h3>
+                    <p>Uma medida do nível médio de energia do áudio.</p>
+                </div>
+
+                <div class="card-analise">
+                    <h3>Formato</h3>
+                    <p>Informações técnicas, como frequência de amostragem e canais.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 SoundCheck. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

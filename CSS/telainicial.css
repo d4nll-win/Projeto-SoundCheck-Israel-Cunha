@@ -1,0 +1,211 @@
+
+/* ============================= */
+/* TELA INICIAL - SOUNDCHECK     */
+/* ============================= */
+
+.pagina-inicial {
+    min-height: 100vh;
+    background-color: #10131c;
+}
+
+#conteudo-home {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background-color: #10131c;
+}
+
+/* Imagem de fundo desfocada */
+#conteudo-home::before {
+    content: "";
+    position: absolute;
+    inset: -15px;
+
+    background-image:
+        linear-gradient(
+            rgba(16, 19, 28, 0.65),
+            rgba(16, 19, 28, 0.85)
+        ),
+        url("../IMAGENS/fundo\ blur.jfif");
+
+    background-size: cover;
+    background-position: center;
+    filter: blur(6px);
+
+    z-index: -1;
+}
+/* Cabeçalho */
+
+#topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 7%;
+    background-color: rgba(16, 19, 28, 0.95);
+    border-bottom: 1px solid #263449;
+}
+
+#logo h1 {
+    color: #36a9ff;
+    font-size: 28px;
+}
+
+#logo p {
+    color: #b8c2d1;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* Menu */
+
+.menu-principal {
+    display: flex;
+    gap: 25px;
+}
+
+.menu-principal a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu-principal a:hover {
+    color: #36a9ff;
+}
+
+/* Conteúdo principal */
+
+#conteudo-home {
+    width: 86%;
+    max-width: 1200px;
+    margin: 45px auto;
+}
+
+/* Boas-vindas */
+
+#boas-vindas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 45px;
+    background-color: rgba(23, 29, 43, 0.92);
+    border-radius: 12px;
+}
+
+.texto-boas-vindas {
+    flex: 1;
+}
+
+.texto-boas-vindas h2 {
+    color: #36a9ff;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.texto-boas-vindas p {
+    color: #d0d7e2;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.imagem-home {
+    flex: 1;
+}
+
+.imagem-home img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Botão principal */
+
+.botao-principal {
+    display: inline-block;
+    padding: 14px 25px;
+    background-color: #1689e8;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.botao-principal:hover {
+    background-color: #0873c9;
+}
+
+/* Sobre o sistema */
+
+#sobre {
+    text-align: center;
+    margin: 60px 0 30px;
+}
+
+#sobre h2 {
+    color: #36a9ff;
+    margin-bottom: 15px;
+}
+
+#sobre p {
+    color: #d0d7e2;
+    line-height: 1.6;
+}
+
+/* Cartões de recursos */
+
+#recursos {
+    display: flex;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.card-recurso {
+    flex: 1;
+    padding: 25px;
+    background-color: rgba(23, 29, 43, 0.95);
+    border: 1px solid #263449;
+    border-radius: 10px;
+}
+
+.card-recurso h3 {
+    color: #36a9ff;
+    margin-bottom: 15px;
+}
+
+.card-recurso p {
+    color: #d0d7e2;
+    line-height: 1.6;
+}
+
+/* Rodapé */
+
+.pagina-inicial footer {
+    background-color: rgba(16, 19, 28, 0.95);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsividade */
+
+@media (max-width: 800px) {
+
+    #topo {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu-principal {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #boas-vindas {
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    #recursos {
+        flex-direction: column;
+    }
+}

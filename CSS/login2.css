@@ -1,0 +1,128 @@
+
+/* ============================= */
+/* RECUPERAÇÃO E CADASTRO        */
+/* ============================= */
+
+.pagina-acesso {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+    background-image:
+        linear-gradient(rgba(10, 15, 25, 0.80),
+                        rgba(10, 15, 25, 0.80)),
+        url("../img/login-audio.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Caixas das páginas */
+
+#recuperacao,
+#cadastro-conta {
+    width: 100%;
+    max-width: 430px;
+    padding: 40px;
+
+    background-color: rgba(23, 29, 43, 0.96);
+    border: 1px solid #263449;
+    border-radius: 12px;
+}
+
+/* Títulos */
+
+#recuperacao h1,
+#cadastro-conta h1 {
+    color: #36a9ff;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#recuperacao h2,
+#cadastro-conta h2 {
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#recuperacao p,
+#cadastro-conta p {
+    color: #c4ccd8;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+/* Formulários */
+
+#recuperacao form,
+#cadastro-conta form {
+    display: flex;
+    flex-direction: column;
+}
+
+#recuperacao label,
+#cadastro-conta label {
+    color: white;
+    margin-bottom: 8px;
+}
+
+#recuperacao input,
+#cadastro-conta input {
+    padding: 12px;
+    margin-bottom: 18px;
+
+    background-color: #222938;
+    color: white;
+
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+
+#recuperacao button,
+#cadastro-conta button {
+    padding: 13px;
+    margin-top: 8px;
+
+    background-color: #1689e8;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#recuperacao button:hover,
+#cadastro-conta button:hover {
+    background-color: #0873c9;
+}
+
+/* Links */
+
+.links-acesso {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.links-acesso a {
+    color: #36a9ff;
+    text-decoration: none;
+}
+
+.links-acesso a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+
+@media (max-width: 500px) {
+    #recuperacao,
+    #cadastro-conta {
+        padding: 25px;
+    }
+}
