@@ -1,4 +1,3 @@
-
 /* Configurações gerais */
 
 * {
@@ -89,7 +88,7 @@ body {
     margin-bottom: 10px;
 }
 
-#formulario > p {
+#formulario>p {
     color: #aab3c2;
     margin-bottom: 30px;
 }

@@ -1,7 +1,6 @@
 
-/* ============================= */
 /* TELA DE TROCAR SENHA          */
-/* ============================= */
+
 
 body.pagina-acesso {
     min-height: 100vh;
@@ -17,7 +16,7 @@ body.pagina-acesso {
     background-color: #10131c;
     background-image:
         linear-gradient(rgba(10, 15, 25, 0.80),
-                        rgba(10, 15, 25, 0.80)),
+            rgba(10, 15, 25, 0.80)),
         url("../img/login-audio.jpg");
 
     background-size: cover;

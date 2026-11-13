@@ -1,7 +1,6 @@
 
-/* ============================= */
 /* RECUPERAÇÃO E CADASTRO        */
-/* ============================= */
+
 
 .pagina-acesso {
     min-height: 100vh;
@@ -12,7 +11,7 @@
 
     background-image:
         linear-gradient(rgba(10, 15, 25, 0.80),
-                        rgba(10, 15, 25, 0.80)),
+            rgba(10, 15, 25, 0.80)),
         url("../img/login-audio.jpg");
 
     background-size: cover;
@@ -121,6 +120,7 @@
 /* Responsividade */
 
 @media (max-width: 500px) {
+
     #recuperacao,
     #cadastro-conta {
         padding: 25px;
