@@ -22,25 +22,18 @@ O projeto propõe uma plataforma com uma interface simples e intuitiva, voltada 
 ## Telas do projeto
 
 ### 1. Login
-![Tela de Login](img/login.png)
 
 ### 2. Página inicial
-![Página Inicial](img/home.png)
 
 ### 3. Cadastro de usuário
-![Cadastro](img/cadastro.png)
 
 ### 4. Recuperação de senha
-![Recuperação de Senha](img/recuperar-senha.png)
 
 ### 5. Análise de áudio
-![Análise](img/analise.png)
 
 ### 6. Resultados
-![Resultados](img/resultados.png)
 
 ### 7. Avaliações e opiniões
-![Avaliações](img/avaliacoes.png)
 
 ## Tecnologias utilizadas
 
